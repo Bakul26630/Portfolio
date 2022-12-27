@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@700&display=swap');
+
+.page #mainContent #main {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   height: 100%;
+}
+ 
+.page #mainContent #main-2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+ 
+.page #mainContent #main #main-2 p {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 3rem 3rem;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1rem;
+    text-transform: capitalize;
+    color: white;
+}
+ 
+.page #mainContent #first {
+    font-size: 2rem;
+}
+ 
+.page #mainContent #second {
+    font-size: 3rem;
+}
+ 
+.page #mainContent #third {
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+}
+ 
+.page #mainContent #fourth {
+    font-size: 1.2rem;
+}
+ 
+.page #mainContent img {
+    width: 40%;
+    height: 80%;
+    border-radius: 30px;
+    -webkit-box-shadow: 12px 12px 60px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 12px 12px 60px -12px rgba(0, 0, 0, 1);
+    box-shadow: 12px 12px 60px -12px rgba(0, 0, 0, 1);
+ }
+ 
+.page #mainContent .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+ }
+ 
+.page #mainContent .buttons button {
+    padding: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.2s ease 0.1s;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+ }
+ 
+.page #mainContent .buttons button:nth-child(2) {
+    margin-left: 3rem;
+}
+ 
+.page #mainContent .buttons button:hover {
+    background-color: orange;
+    color: white;
+    font-weight: 900;
+    -webkit-box-shadow: inset 2px 2px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 2px 2px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 2px 2px 7px 0px rgba(0, 0, 0, 0.75);
+} 

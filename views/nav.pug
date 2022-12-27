@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bakul Garg -Programmer,Coder,Web Enthusiast
+        style 
+            include ../static/nav.css
+        block style 
+        script(src="https://code.jquery.com/jquery-3.6.2.slim.min.js"
+            integrity="sha256-E3P3OaTZH+HlEM7f1gdAT3lHAn4nWBZXuYe89DFg2d0="
+            crossorigin="anonymous") 
+    body 
+        div(id="page" class="page")
+            section(id="nav" class="navbar")  
+                button(class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation" id="first-button")
+                        div(class="animated-icon1" id="icon1")
+                            span
+                            span
+                            span
+                nav
+                    div#collapse 
+                        span#name Bakul
+                        ul
+                            li(class="ul-item")
+                                a(class="nav-link" href="/") Home
+                            li(class="ul-item")
+                                a(class="nav-link" href="/contact") Contact Me
+                            li(class="ul-item")
+                                a(class="nav-link" href="/work") My Work
+                            li(class="ul-item")
+                                a(class="nav-link" href="/blog" id="blog") My Blogs 
+            section#mainContent 
+                block content
+        script(src="./home.js")
+        block script   

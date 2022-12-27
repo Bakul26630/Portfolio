@@ -1,0 +1,28 @@
+extends nav.pug 
+block style 
+    style 
+        include ../static/blog.css
+block content 
+    div#blogPage
+        div#head
+            h1 My Blogs 
+            div 
+                button#addBlog Add New Blog
+                button#removeBlog Remove Blog 
+        #form.close
+            form(action="../addBlog.js",method="POST") 
+                div 
+                    input(type="text" name ="title" id="title" placeholder="Enter the Title")  
+                div     
+                    textarea(name="Content" id="content") Write the blog content here 
+                button(type = "submit" class="updateBtns" id='add') ADD BLOG    
+        #removeForm.close
+            form(action="../removeBlog.js",method="POSt") 
+                div 
+                    input(type="text" name ="title" id="removeTitle" placeholder="Enter the Title of Blog to remove")   
+                button(type = "submit" class="updateBtns") Remove Blog    
+        div#allBlogs   
+    script(src="../blog.js") 
+    script(src="./showBlog.js") 
+
+           

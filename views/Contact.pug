@@ -1,0 +1,21 @@
+extends nav.pug 
+block style 
+    style 
+        include ../static/contact.css
+block content 
+    div#contactpage
+        h1 Reach Us 
+        #formSection 
+            form(action="../addQuery.js",method="post") 
+                input(type="text" name="Name" placeholder="Enter Your Name")
+                input(type="email" name="Email" placeholder="Enter Your Email")
+                input(type="text" name="Number" placeholder="Enter Your Contact Number")
+                textarea(name="Concern" id="concern") Enter Your Concern 
+                button(type="submit") Post Your Query
+    script.         
+        document.getElementById('concern').addEventListener('focus',()=>{
+            document.getElementById('concern').innerText="";
+        })
+    script(src="") 
+
+           
